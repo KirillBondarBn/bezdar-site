@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="../styles/visualisation.css">
+    </head>
+
+    <body>
+        <div class="Point_info">
+            <h3>Point information</h3>
+            <label>x:</label>
+            <label>Radius: </label>
+            <label></label>
+        </div>
+
+        <canvas id="clustering_field" width="500" height="500"></canvas>
+        <button type="button" id="add" onclick="setDrawMode()">Draw</button>
+        <button type="button" id="delete" onclick="setRemoveMode()">Remove</button>
+        <button type="button" id="k-means" onclick="k_means()">k-means</button>
+        <button type="button" id="clear" onclick="clearCanvas()">Clear points</button>
+        <input type="range" min="1" max="20" id="radiusRange" value="5">
+        <input type="range" min="3" max="10" id="clusterCount" value="3" oninput="setValidClusterCount()">
+
+        <script src="../scripts/clustering.js"></script>
+    </body>
+</html>
