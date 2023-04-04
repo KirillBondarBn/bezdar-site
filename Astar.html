@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Algoritm in Web </title>
+        <link rel="stylesheet" href="style.css">
+        <script src="Astar.js"></script>
+    </head>
+    
+    <body style="background-color: #36393F;">
+        <div style="margin-left: 20px; margin-right: 20px;">
+            <p class="header"> A Star</p>
+            <p class="subtitle"> Поиск A*(A star) информатике и математике, алгоритм поиска по первому наилучшему совпадению на графе, который находит маршрут с наименьшей стоимостью от одной вершины (начальной) к другой (целевой, конечной).</p>
+            <hr width="100%" size="4px" color="#f67280">
+        </div>
+
+        <div style="margin-left:10%; margin-right: 5%; color: #f44747;">
+            <!-- <label>Введите размер лабиринта:</label>
+            <input  id="sizeMatrix" type="number" min="2" max="50"> -->
+            <label for="sizeMatrix">Введите размер лабиринта:</label>
+            <input type="number" id="sizeMatrix" name="sizeMatrix">
+            <button id="submit" onclick="printMatrix()">Вывести значение</button>
+
+            <div class="matrix">
+
+            </div>
+        </div>
+    </body>
+</html>
