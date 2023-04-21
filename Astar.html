@@ -3,7 +3,7 @@
     <head>
         <title> Algoritm in Web </title>
         <link rel="stylesheet" href="style.css">
-        <script src="Astar.js"></script>
+        
     </head>
     
     <body style="background-color: #36393F;">
@@ -17,12 +17,14 @@
             <!-- <label>Введите размер лабиринта:</label>
             <input  id="sizeMatrix" type="number" min="2" max="50"> -->
             <label for="sizeMatrix">Введите размер лабиринта:</label>
-            <input type="number" id="sizeMatrix" name="sizeMatrix">
-            <button id="submit" onclick="printMatrix()">Вывести значение</button>
+            <input type="range"  id="sizeMatrix" oninput="rangeNumber()" min="2" max="60" step="1">
+            <p id="rangeNumbers"></p>
+            <button id="submit" onclick="display()">Вывести значение</button>
 
-            <div class="matrix">
+            <canvas id="board" width="700px" height="700px" style="background-color: #FFFFFF;">
 
-            </div>
+            </canvas>
         </div>
+        <script src="Astar.js"></script>
     </body>
 </html>
